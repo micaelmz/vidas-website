@@ -21,6 +21,16 @@
     transition: .5s;
 }
 
+.icon-logo{
+    width: calc(1.375rem + 1.5vw);
+    height: calc(1.375rem + 1.5vw);
+}
+
+.icon-logo2{
+    width: calc(2rem + 3vw);
+    height: calc(2rem + 3vw);
+}
+
 .btn-primary {
     color: #FFFFFF;
 }
@@ -372,7 +382,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(122, 183, 48, .8);
+    background: rgba(255, 222, 89, 1);
     transition: .5s;
     opacity: 0;
 }

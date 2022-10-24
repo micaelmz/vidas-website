@@ -345,6 +345,12 @@ progress{
     font-weight:700;
     line-height:1.2
 }
+
+.display-2{
+    font-size:calc(1.625rem + 4vw);
+    font-weight:700;
+    line-height:1.2
+}
 @media (min-width: 1200px){
     .display-1{
         font-size:5rem

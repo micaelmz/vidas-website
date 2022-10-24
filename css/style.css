@@ -396,9 +396,11 @@
 }
 
 .bg-testimonial {
-    background: url(../img/testimonial.jpg) top left no-repeat;
+    justify-items: right;
+    background: url(../img/testimonial.jpg) top right no-repeat;
     background-size: cover;
 }
+
 
 .testimonial-carousel .owl-nav {
     position: absolute;

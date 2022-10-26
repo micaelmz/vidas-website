@@ -6193,9 +6193,18 @@ textarea.form-control-lg{
 .text-white{
     color:#fff !important
 }
+
 .text-body{
+    text-align: justify;
+    text-justify: inter-word;
     color:#656565 !important
 }
+
+.text-justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .text-muted{
     color:#6c757d !important
 }

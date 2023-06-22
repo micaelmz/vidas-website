@@ -26,8 +26,6 @@ hr{
 
 }
 
-
-
 .icon-logo{
     width: calc(1.375rem + 1.5vw);
     height: calc(1.375rem + 1.5vw);
@@ -52,11 +50,36 @@ hr{
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--light)
+}
+
+.show{
+    height: 100vh;
+    width: 100vh !important;
+    /* do it slowly */
+    transition: height 0.5s ease-in-out;
 }
 
 .bg-footer{
     background-color: rgba(33, 33, 33, 0.9);
+}
+
+.footer-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.button-size-1{
+    width: 10rem;
+    height: 2.5rem;
+}
+
+.fill-white{
+    fill: white !important;
+}
+
+.fill-black{
+    fill: black;
 }
 
 .input-with-icon {

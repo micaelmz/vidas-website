@@ -54,6 +54,9 @@ hr{
 .view-mobile{
     display: none;
 }
+.text-justify{
+    text-align: justify !important;
+}
 
 /* Tamanhos de fonte customizados */
 .res-font-1{
@@ -93,18 +96,13 @@ hr{
     color: var(--light)
 }
 
-.icon-logo{
-    width: calc(1.375rem + 1.5vw);
-    height: calc(1.375rem + 1.5vw);
-}
 .footer-icon{
     width: calc(1.5rem + 2vh) !important;
     height: calc(1.5rem + 2vh) !important;
     margin: 0 .3vh 0 .3vh !important;
 }
-.button-size-1{
-    width: 10rem;
-    height: 2.5rem;
+.button-1{
+    min-width: 35%;
 }
 .input-with-icon {
   position: relative;
@@ -120,7 +118,10 @@ hr{
     width: 100%;
     height: 100%;
 }
-
+#icon-logo{
+    height: var(--responsible-font-size-1);
+    width: var(--responsible-font-size-1);
+}
 
 @media (max-width: 992px) {
     .view-pc{
@@ -128,5 +129,8 @@ hr{
     }
     .view-mobile{
         display: block;
+    }
+    .container-mobile{
+        margin: 3rem;
     }
 }

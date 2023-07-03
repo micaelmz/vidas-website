@@ -3595,7 +3595,7 @@ textarea.form-control-lg{
     background-image:var(--bs-navbar-toggler-icon-bg);
     background-repeat:no-repeat;
     background-position:center;
-    background-size:100%
+    background-size:100%;
 }
 .navbar-nav-scroll{
     max-height:var(--bs-scroll-height,75vh);

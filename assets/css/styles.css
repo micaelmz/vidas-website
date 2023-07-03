@@ -3,34 +3,76 @@
     --secondary: #7AB730 !important;
     --light: #F3F3F3 !important;
     --dark: #212121 !important;
+    /* Tamanhos de fonte responsivas */
+    --responsible-font-size-1: calc(1.7rem + 2.2vh);
+    --responsible-font-size-2: calc(1rem + 1.5vh);
+    --responsible-font-size-3: calc(1rem + 1.2vh);
+    --responsible-font-size-4: calc(0.7rem + 1.2vh);
+    --responsible-font-size-5: calc(0.7rem + 0.8vh);
+}
+p {
+    font-family: Poppins, sans-serif;
+}
+hr{
+    border: 0;
+    height: 3rem;
 }
 
+/* FONTES */
 .roboto {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.12rem;
     font-weight: 700 !important;
 }
 
-p {
-    font-family: Poppins, sans-serif;
-}
-
-hr{
-    border: 0;
-    height: 3rem;
-}
-
+/* CORES */
 .bg-vidas{
     background-color: var(--primary) !important;
     background-image: url(../images/background.png);
 
 }
-
-.icon-logo{
-    width: calc(1.375rem + 1.5vw);
-    height: calc(1.375rem + 1.5vw);
+.bg-footer{
+    background-color: rgba(33, 33, 33, 0.9);
+}
+.fill-white{
+    fill: white !important;
+}
+.fill-black{
+    fill: black;
 }
 
+/* COMPORTAMENTOS */
+.show{
+    height: 100vh;
+    width: 100vh !important;
+    /* do it slowly */
+    transition: height 0.5s ease-in-out;
+}
+.view-pc{
+    display: block;
+}
+.view-mobile{
+    display: none;
+}
+
+/* Tamanhos de fonte customizados */
+.res-font-1{
+    font-size: var(--responsible-font-size-1);
+}
+.res-font-2{
+    font-size: var(--responsible-font-size-2);
+}
+.res-font-3{
+    font-size: var(--responsible-font-size-3);
+}
+.res-font-4{
+    font-size: var(--responsible-font-size-4);
+}
+.res-font-5{
+    font-size: var(--responsible-font-size-5);
+}
+
+/* NAVBAR */
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -43,49 +85,30 @@ hr{
     outline: none;
     transition: .5s;
 }
-
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
 }
-
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--light)
 }
 
-.show{
-    height: 100vh;
-    width: 100vh !important;
-    /* do it slowly */
-    transition: height 0.5s ease-in-out;
+.icon-logo{
+    width: calc(1.375rem + 1.5vw);
+    height: calc(1.375rem + 1.5vw);
 }
-
-.bg-footer{
-    background-color: rgba(33, 33, 33, 0.9);
-}
-
 .footer-icon{
-    width: 2rem;
-    height: 2rem;
+    width: calc(1.5rem + 2vh) !important;
+    height: calc(1.5rem + 2vh) !important;
+    margin: 0 .3vh 0 .3vh !important;
 }
-
 .button-size-1{
     width: 10rem;
     height: 2.5rem;
 }
-
-.fill-white{
-    fill: white !important;
-}
-
-.fill-black{
-    fill: black;
-}
-
 .input-with-icon {
   position: relative;
 }
-
 .search-icon {
   position: absolute;
   top: 50%;
@@ -93,8 +116,17 @@ hr{
   transform: translateY(-50%);
   fill: #aaa;
 }
-
 .fill-image{
     width: 100%;
     height: 100%;
+}
+
+
+@media (max-width: 992px) {
+    .view-pc{
+        display: none;
+    }
+    .view-mobile{
+        display: block;
+    }
 }

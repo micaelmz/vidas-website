@@ -21,7 +21,6 @@ hr{
 /* FONTES */
 .roboto {
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.12rem;
     font-weight: 700 !important;
 }
 
@@ -118,9 +117,19 @@ hr{
     width: 100%;
     height: 100%;
 }
-#icon-logo{
+.icon-logo{
     height: var(--responsible-font-size-1);
     width: var(--responsible-font-size-1);
+}
+
+.void-t-1{
+    margin-top: 5vh !important;
+}
+.void-t-2{
+    margin-top: 10vh !important;
+}
+.void-t-3{
+    margin-top: 15vh !important;
 }
 
 @media (max-width: 992px) {
@@ -133,4 +142,55 @@ hr{
     .container-mobile{
         margin: 3rem;
     }
+}
+
+/* PROJECTS SECTION */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.port {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background: var(--primary);
+  background-color: var(--primary);
+  z-index: 103;
+  visibility: hidden;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.item_open .close {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#menu{
+    width: 100%;
+    height: 100%;
+}
+
+.min-res-font-1{
+    min-height: calc(var(--responsible-font-size-1) + 0.7vh) !important;
 }

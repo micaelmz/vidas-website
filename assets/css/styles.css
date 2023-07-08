@@ -17,9 +17,7 @@ hr{
     border: 0;
     height: 3rem;
 }
-body{
-    overflow: hidden;
-}
+
 /* FONTES */
 .roboto {
     font-family: Roboto, sans-serif;

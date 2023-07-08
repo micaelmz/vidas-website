@@ -201,3 +201,8 @@ body{
     display: flex;
     margin: -8% 0 0 85% !important;
 }
+#footer-mobile{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

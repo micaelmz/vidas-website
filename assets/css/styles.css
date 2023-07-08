@@ -17,7 +17,9 @@ hr{
     border: 0;
     height: 3rem;
 }
-
+body{
+    overflow: hidden;
+}
 /* FONTES */
 .roboto {
     font-family: Roboto, sans-serif;
@@ -167,30 +169,35 @@ hr{
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
   border-bottom: 1px solid #d0d0d0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .port.item_open {
   visibility: visible;
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .item_open .close {
   opacity: 1;
   top: 0px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #menu{
-    width: 100%;
+    width: 81% !important;
     height: 100%;
 }
 
 .min-res-font-1{
     min-height: calc(var(--responsible-font-size-1) + 0.7vh) !important;
+}
+#closeButton{
+    min-height: 5rem !important;
+    display: flex;
+    margin: -8% 0 0 85% !important;
 }

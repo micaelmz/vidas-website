@@ -1,5 +1,5 @@
 var openMenuButton = $('.openMenu');
-var closeButton = $('#closeButton');
+var closeButton = $('#closeButtonSVG');
 function toggleMenu() {
      $('#menu').toggleClass('item_open');
      openMenuButton.toggleClass('close openMenu');

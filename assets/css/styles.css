@@ -89,6 +89,9 @@ hr{
 .min-res-font-1{
     min-height: calc(var(--responsible-font-size-1) + 0.7vh) !important;
 }
+.min-res-font-0{
+    min-height: calc(var(--responsible-font-size-1) + 2vh) !important;
+}
 
 .footer-icon{
     width: calc(1.5rem + 2vh) !important;
@@ -183,13 +186,32 @@ hr{
     padding-right: 9.5rem!important;
 }
 #closeButtonSVG{
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+    opacity: 0;
+    animation: fade 0.4s ease-in-out forwards;
 }
 
 .footer-mobile{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%; /* No início da animação (0%), a div está fora da tela, à esquerda */
+  }
+  100% {
+    left: 0; /* No final da animação (100%), a div está posicionada normalmente, à direita */
+  }
 }

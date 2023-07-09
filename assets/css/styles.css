@@ -56,6 +56,19 @@ hr{
 .text-justify{
     text-align: justify !important;
 }
+.void-t-1{
+    margin-top: 5vh !important;
+}
+.void-t-2{
+    margin-top: 10vh !important;
+}
+.void-t-3{
+    margin-top: 15vh !important;
+}
+.fill-image{
+    width: 100%;
+    height: 100%;
+}
 
 /* Tamanhos de fonte customizados */
 .res-font-1{
@@ -73,26 +86,8 @@ hr{
 .res-font-5{
     font-size: var(--responsible-font-size-5);
 }
-
-/* NAVBAR */
-.navbar-light .navbar-nav .nav-link {
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    margin-left: 30px;
-    padding: 30px 0;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--dark);
-    outline: none;
-    transition: .5s;
-}
-.sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 20px 0;
-}
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--light)
+.min-res-font-1{
+    min-height: calc(var(--responsible-font-size-1) + 0.7vh) !important;
 }
 
 .footer-icon{
@@ -113,23 +108,9 @@ hr{
   transform: translateY(-50%);
   fill: #aaa;
 }
-.fill-image{
-    width: 100%;
-    height: 100%;
-}
 .icon-logo{
     height: var(--responsible-font-size-1);
     width: var(--responsible-font-size-1);
-}
-
-.void-t-1{
-    margin-top: 5vh !important;
-}
-.void-t-2{
-    margin-top: 10vh !important;
-}
-.void-t-3{
-    margin-top: 15vh !important;
 }
 
 @media (max-width: 992px) {
@@ -144,7 +125,7 @@ hr{
     }
 }
 
-/* PROJECTS SECTION */
+/* CUSTOM NAVBAR */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -190,15 +171,12 @@ hr{
     width: 81% !important;
     height: 100%;
 }
-
-.min-res-font-1{
-    min-height: calc(var(--responsible-font-size-1) + 0.7vh) !important;
-}
 #closeButton{
     min-height: 5rem !important;
     display: flex;
     margin: -8% 0 0 85% !important;
 }
+
 #footer-mobile{
     position: absolute;
     bottom: 0;

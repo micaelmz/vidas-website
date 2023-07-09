@@ -171,10 +171,21 @@ hr{
     width: 81% !important;
     height: 100%;
 }
+/*#closeButton{*/
+/*    position: absolute;*/
+/*    min-height: 5rem !important;*/
+/*    display: flex;*/
+/*    margin: 0 0 0 75% !important;*/
+/*    z-index: 9999;*/
+/*}*/
+
 #closeButton{
-    min-height: 5rem !important;
-    display: flex;
-    margin: -8% 0 0 85% !important;
+    padding-right: 9.5rem!important;
+}
+#closeButtonSVG{
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .footer-mobile{

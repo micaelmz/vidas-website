@@ -77,7 +77,6 @@
   </div> <!-- Search -->
   <div class="col-auto"></div>
 </div>
-<!-- TODO: fazer o menu vim do topo da pagina e não abaixo da navbar, sendo necessário adicionar todos elementos no menu dnv, incluindo hamburger da navbar, porém, vai permitir mais naturalidade -->
 <div id="navbar-mobile" class="row d-flex d-lg-none py-5 px-5 m-0 sticky-top">
   <div class="col-3"> <!-- Hamburger -->
     <a href="#menu" class="m-0 p-0 openMenu">
@@ -94,11 +93,10 @@
     <a href="#"><svg display="none" id="closeButtonSVG" xmlns="http://www.w3.org/2000/svg" width="5rem" height="5rem" class="bi bi-x-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></a>
   </div>
 </div>
-
 </section>
 <!-- Navbar End -->
 <!-- Home Start -->
-<section id="home">
+<section id="home" class="mt-0 mt-lg-4">
  <div class="container-lg">
     <div class="container-mobile mt-0">
       <div class="row m-0 mb-lg-3"> <!-- Title -->
@@ -106,11 +104,11 @@
       </div> <!-- Title -->
       <div class="row">
         <div class="col-12 col-lg-4">
-          <img src="assets/images/volunteer.png" class="fill-image view-pc" alt="">
+          <img src="assets/images/volunteer.jpg" class="fill-image view-pc" alt="">
           <img src="assets/images/volunteer-mobile.jpg" class="fill-image view-mobile mb-2" alt="">
         </div>
         <div class="col-12 col-lg-8">
-          <h4 class="fw-bold res-font-3 view-mobile">Um Amigo para Animais Sem-teto</h4>
+          <h4 class="fw-bold res-font-3 view-mobile my-3 text-uppercase">Um Amigo para Animais Sem-teto</h4>
           <p class="res-font-4 text-justify">
             O VIDAS é uma organização que busca o bem-estar animal com a ajuda de voluntários dedicados orientados, formando uma rede essencial de defensores dos animais. Se você compartilha nosso interesse em fazer a mudança na vida dos animais desabrigados, considere doar seu tempo para a VIDAS.
             <br>
@@ -120,9 +118,12 @@
             ●Aceitamos voluntários que precisam cumprir serviço comunitário designado pelo tribunal (cada caso será avaliado individualmente).<br>
             ●Solicitamos ao menos 8 horas mensais de dedicação dos voluntários.<br>
           </p>
-          <button type="button" class="btn btn-dark res-font-5 button-1 mt-3 mt-lg-1"> <!-- Contate-nos -->
+          <button type="button" class="btn btn-dark res-font-5 button-1 mt-3 mt-lg-1 view-pc">
               INSCRIÇÃO DE VOLUNTÁRIO
-              </button> <!-- Contate-nos -->
+          </button>
+          <button type="button" class="btn btn-dark res-font-5 mx-auto mt-1 mt-lg-1 view-mobile" style="width: 50%; height: 4vh;">
+              INSCRIÇÃO DE VOLUNTÁRIO
+          </button>
         </div>
       </div>
     </div>
@@ -130,7 +131,7 @@
 </section>
 <!-- Home End -->
 <!-- Footer Start -->
-<footer class="d-flex d-lg-none justify-content-between align-items-center bg-dark m-0 p-0 py-5">
+<footer class="d-flex d-lg-none justify-content-between align-items-center bg-dark m-0 p-0 py-5 footer-fixed">
   <div class="col-4">
     <p class="text-white text-center text-uppercase m-0 ms-2 res-font-4">© Vidas 2023</p>
   </div>
@@ -151,7 +152,7 @@
     </ul>
   </div>
 </footer>
-<footer class="d-none d-lg-flex flex-wrap justify-content-between align-items-center p-0 my-3">
+<footer class="d-none d-lg-flex flex-wrap justify-content-between align-items-center p-0 my-3 footer-fixed">
   <div class="container">
     <div class="row">
       <ul class="nav justify-content-end list-unstyled d-flex">
